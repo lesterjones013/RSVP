@@ -1021,176 +1021,170 @@
     }
 
     /* ===============================
-ENTOURAGE SECTION
-================================ */
+    ENTOURAGE SECTION
+    ================================ */
 
-.entourage-section{
-background:#f6f5f2;
-padding:120px 20px;
-}
+    .entourage-section{
+        background:#f6f5f2;
+        padding:120px 20px;
+    }
 
-.entourage-title{
-text-align:center;
-font-family:"Playfair Display", serif;
-font-size:54px;
-letter-spacing:4px;
-}
+    .entourage-title{
+        text-align:center;
+        font-family:"Playfair Display", serif;
+        font-size:54px;
+        letter-spacing:4px;
+    }
 
-.entourage-sub{
-text-align:center;
-font-family:"Mea Culpa", cursive;
-font-size:36px;
-margin-top:-10px;
-margin-bottom:70px;
-}
+    .entourage-sub{
+        text-align:center;
+        font-family:"Mea Culpa", cursive;
+        font-size:36px;
+        margin-top:-10px;
+        margin-bottom:70px;
+    }
 
-.entourage-group{
-margin-bottom:60px;
-}
+    .entourage-group{
+        margin-bottom:60px;
+    }
 
-.entourage-group h3{
-font-family:"Mea Culpa", cursive;
-font-size:46px;
-text-align:center;
-margin-bottom:25px;
-}
+    .entourage-group h3{
+        font-family:"Mea Culpa", cursive;
+        font-size:46px;
+        text-align:center;
+        margin-bottom:25px;
+    }
 
-.entourage-list{
-text-align:center;
-font-family:"Playfair Display", serif;
-}
+    .entourage-list{
+        text-align:center;
+        font-family:"Playfair Display", serif;
+    }
 
-.entourage-list p{
-margin:4px 0;
-font-size:16px;
-color:#444;
-}
+    .entourage-list p{
+        margin:4px 0;
+        font-size:16px;
+        color:#444;
+    }
 
-/* sponsors grid */
+    /* sponsors grid */
 
-.sponsor-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:8px;
-text-align:center;
-font-family:"Playfair Display", serif;
-font-size:15px;
-color:#444;
-}
+    .sponsor-grid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
+        text-align:center;
+        font-family:"Playfair Display", serif;
+        font-size:15px;
+        color:#444;
+    }
 
-/* tablet */
+    /* tablet */
 
-@media (max-width:1024px){
+    @media (max-width:1024px){
+        .entourage-title{
+            font-size:44px;
+        }
 
-.entourage-title{
-font-size:44px;
-}
+        .entourage-group h3{
+            font-size:40px;
+        }
+    }
 
-.entourage-group h3{
-font-size:40px;
-}
+    /* mobile */
 
-}
+    @media (max-width:767px){
+        .entourage-section{
+            padding:80px 20px;
+        }
 
-/* mobile */
+        .entourage-title{
+            font-size:36px;
+        }
 
-@media (max-width:767px){
+        .entourage-sub{
+            font-size:28px;
+        }
 
-.entourage-section{
-padding:80px 20px;
-}
+        .entourage-group h3{
+            font-size:32px;
+        }
 
-.entourage-title{
-font-size:36px;
-}
+        .sponsor-grid{
+            grid-template-columns:1fr;
+        }
+    }
 
-.entourage-sub{
-font-size:28px;
-}
+    /* ===============================
+    FAQ SECTION
+    ================================ */
 
-.entourage-group h3{
-font-size:32px;
-}
+    .faq-section{
+        background:#ffffff;
+        padding:120px 20px;
+    }
 
-.sponsor-grid{
-grid-template-columns:1fr;
-}
+    .faq-title{
+        text-align:center;
+        font-family:"Playfair Display", serif;
+        font-size:54px;
+        letter-spacing:4px;
+    }
 
-}
+    .faq-sub{
+        text-align:center;
+        font-family:"Mea Culpa", cursive;
+        font-size:36px;
+        margin-top:-10px;
+        margin-bottom:70px;
+    }
 
-/* ===============================
-FAQ SECTION
-================================ */
+    .faq-container{
+        max-width:900px;
+        margin:auto;
+    }
 
-.faq-section{
-background:#ffffff;
-padding:120px 20px;
-}
+    .faq-item{
+        border-bottom:1px solid #e6e6e6;
+        padding:18px 0;
+    }
 
-.faq-title{
-text-align:center;
-font-family:"Playfair Display", serif;
-font-size:54px;
-letter-spacing:4px;
-}
+    .faq-question{
+        font-family:"Playfair Display", serif;
+        font-size:18px;
+        cursor:pointer;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
 
-.faq-sub{
-text-align:center;
-font-family:"Mea Culpa", cursive;
-font-size:36px;
-margin-top:-10px;
-margin-bottom:70px;
-}
+    .faq-answer{
+        display:none;
+        margin-top:12px;
+        color:#555;
+        font-size:15px;
+        line-height:1.6;
+        font-family:"Libertinus Math", serif;
+    }
 
-.faq-container{
-max-width:900px;
-margin:auto;
-}
+    .faq-item.active .faq-answer{
+        display:block;
+    }
 
-.faq-item{
-border-bottom:1px solid #e6e6e6;
-padding:18px 0;
-}
+    .faq-toggle{
+        font-size:20px;
+    }
 
-.faq-question{
-font-family:"Playfair Display", serif;
-font-size:18px;
-cursor:pointer;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+    /* mobile */
 
-.faq-answer{
-display:none;
-margin-top:12px;
-color:#555;
-font-size:15px;
-line-height:1.6;
-font-family:"Libertinus Math", serif;
-}
+    @media(max-width:767px){
+        .faq-title{
+            font-size:36px;
+        }
 
-.faq-item.active .faq-answer{
-display:block;
-}
-
-.faq-toggle{
-font-size:20px;
-}
-
-/* mobile */
-
-@media(max-width:767px){
-
-.faq-title{
-font-size:36px;
-}
-
-.faq-sub{
-font-size:28px;
-}
-
-}
+        .faq-sub{
+            font-size:28px;
+        }
+    }
 </style>
 
 @section('page-content')
@@ -1342,31 +1336,31 @@ font-size:28px;
             <div class="timeline">
 
                 <div class="timeline-item">
-                    <div class="timeline-time">2:30PM</div>
+                    <div class="timeline-time">4:30PM</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-label">CEREMONY</div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-time">4:00PM</div>
+                    <div class="timeline-time">5:30PM</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-label">PHOTOS</div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-time">5:00PM</div>
+                    <div class="timeline-time">6:00PM</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-label">PROGRAM</div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-time">5:30PM</div>
+                    <div class="timeline-time">6:30PM</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-label">DANCE</div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-time">6:00PM</div>
+                    <div class="timeline-time">7:00PM</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-label">DINNER</div>
                 </div>
@@ -1488,339 +1482,264 @@ font-size:28px;
         </div>
     </section>
     <section id="entourage" class="entourage-section fade-in-section" data-nav="dark">
-
-<div class="container">
-
-<h2 class="entourage-title">THE WEDDING</h2>
-<div class="entourage-sub">Entourage</div>
-
-<!-- OFFICIATING -->
-
-<div class="entourage-group">
-<h3>Officiating</h3>
-
-<div class="entourage-list">
-
-<p><strong>Officiating Minister</strong><br>Rogelio Paraguas</p>
-
-<p><strong>Director of Peace</strong><br>Rogelio Rogel</p>
-
-<p><strong>Chairman</strong><br>Ramir Gomez</p>
-
-</div>
-</div>
-
-
-<!-- PARENTS -->
-
-<div class="entourage-group">
-
-<h3>Parents</h3>
-
-<div class="row text-center">
-
-<div class="col-md-6 mb-4">
-
-<p><strong>Groom's Parents</strong></p>
-<p>Stand as Father<br>Mark Lester Donato</p>
-<p>Stand as Mother<br>Angela Sophia Donato – Dela Peña</p>
-
-</div>
-
-<div class="col-md-6">
-
-<p><strong>Bride's Parents</strong></p>
-<p>Father<br>Sotero Musnit</p>
-<p>Mother<br>Eleale Musnit</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- WITNESSES -->
-
-<div class="entourage-group">
-
-<h3>Witnesses</h3>
-
-<div class="entourage-list">
-
-<p>Leonardo Santos & Delaiah Santos</p>
-<p>Arsenio Pedrenia & Merceditas Pedrenia</p>
-
-</div>
-
-</div>
-
-
-<!-- BEST MAN -->
-
-<div class="entourage-group">
-
-<h3>Best Man</h3>
-
-<div class="entourage-list">
-<p>King Arthur Donato</p>
-</div>
-
-</div>
-
-
-<!-- GROOMSMEN -->
-
-<div class="entourage-group">
-
-<h3>Groomsmen</h3>
-
-<div class="entourage-list">
-
-<p>Nicanor Bayeta Jr.</p>
-<p>Lester Jones Musnit</p>
-<p>Art Kevin Donato</p>
-<p>Art Nicolo Donato</p>
-<p>Donn Manuel Donato</p>
-<p>TJ Alberto</p>
-
-</div>
-
-</div>
-
-
-<!-- MAID OF HONOR -->
-
-<div class="entourage-group">
-
-<h3>Maid of Honor</h3>
-
-<div class="entourage-list">
-<p>Vanessa Palanca</p>
-</div>
-
-</div>
-
-
-<!-- BRIDESMAIDS -->
-
-<div class="entourage-group">
-
-<h3>Bridesmaids</h3>
-
-<div class="entourage-list">
-
-<p>Darlean Hortaleza</p>
-<p>Grace Dawn Demisana</p>
-<p>Maureen Demisana</p>
-<p>Janine Gomez</p>
-<p>Princess Diar Pedrenia</p>
-<p>Meybel Molino</p>
-
-</div>
-
-</div>
-
-
-<!-- LITTLE ENTOURAGE -->
-
-<div class="entourage-group">
-
-<h3>Little Entourage</h3>
-
-<div class="entourage-list">
-
-<p><strong>Ring Bearer</strong><br>Prinz Arkell Donato</p>
-
-<p><strong>Bible Bearer</strong><br>Bvnso Saballero</p>
-
-<p><strong>Flower Girls</strong></p>
-
-<p>Xavia Claire Morales</p>
-<p>Nyra Aniah Rayn Donato</p>
-<p>Arrianna Emerald Gutierrez</p>
-
-</div>
-
-</div>
-
-
-<!-- PRINCIPAL SPONSORS -->
-
-<div class="entourage-group">
-
-<h3>Principal Sponsors</h3>
-
-<div class="sponsor-grid">
-
-<div>Bro. Arman Menguito & Sis. Maricel Menguito</div>
-<div>Bro. Dominador Sampaga & Sis. Pia Sampaga</div>
-<div>Bro. Vanni Saguban & Sis. Malou Saguban</div>
-<div>Bro. Jun Saturnino & Sis. Marinela Saturnino</div>
-<div>Bro. Deverio Salalima & Sis. Norselyn Salalima</div>
-
-<div>Toti Alberto & Joy Alberto</div>
-<div>Donn Cruz & April Cruz</div>
-<div>Dr. Dondi Concepcion</div>
-<div>Dr. John Porquez, MD</div>
-<div>Dr. Jose Bondoc, MD</div>
-<div>Dr. Ricky Arrazamendez & Dra. Arrazamendez</div>
-
-<div>Engr. Arnold Rillorta</div>
-<div>Ms. Samantha Aquino</div>
-<div>Ms. Eden Sermona</div>
-<div>Ms. Teresita Aquino</div>
-<div>Mr. Troy Alberto & Ms. Yasmeen King</div>
-<div>Mr. Jose Francisco Miranda</div>
-<div>Mr. Jasper Cruz</div>
-<div>Mr. Virgilio Hermogino</div>
-<div>Mr. Mervic Sabiniano & Shegivelee Palacio</div>
-<div>Mr. Ronald Cudiamat & Mrs. Apple Cudiamat</div>
-
-</div>
-
-</div>
-
-
-<!-- USHERS -->
-
-<div class="entourage-group">
-
-<h3>Ushers</h3>
-
-<div class="entourage-list">
-
-<p>Lean Simon Luciano</p>
-<p>Jade Palarpalar</p>
-<p>Jesse Estor</p>
-<p>Ramil Husayan</p>
-<p>Prince Jairus Rogel</p>
-<p>Benjie Ison</p>
-
-</div>
-
-</div>
-
-
-<!-- USHERETTES -->
-
-<div class="entourage-group">
-
-<h3>Usherettes</h3>
-
-<div class="entourage-list">
-
-<p>Maria Christine Hipol</p>
-<p>Shienna Husayan</p>
-<p>Resham Vinzal</p>
-<p>Nerisa Hipol</p>
-<p>Gracel Tolosa</p>
-<p>Mary Rose Hay</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<section id="faqs" class="faq-section fade-in-section" data-nav="dark">
-
-<div class="container">
-
-<h2 class="faq-title">FREQUENTLY ASKED</h2>
-<div class="faq-sub">Questions</div>
-
-<div class="faq-container">
-
-<div class="faq-item">
-<div class="faq-question">
-Are children invited?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-To allow all guests to relax and enjoy the celebration, the wedding may be adults-only unless children are specifically included on the entourage and invitation as well.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Can I bring a plus one?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-Due to limited seating, only guests listed on the invitation are able to attend. Thank you for understanding.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Can guests wear white?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-Out of respect for the bride, we kindly ask guests not to wear white or off-white attire during the wedding day.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Can I take photos during the ceremony?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-We kindly ask guests to refrain from taking photos during the ceremony and simply enjoy the moment. You are welcome to take photos during the reception.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Can guests ask the couple to kiss during the reception?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-In keeping with the respectful tone of the celebration, we may share a kiss during appropriate moments in the program, but guests are kindly requested not to chant or cheer for it.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Can guests ring bells or clink glasses to ask the couple to kiss?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-For our celebration, we kindly ask guests not to ring bells or clink glasses, as we wish to keep the program simple and respectful.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Are gifts required?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-Your presence at our wedding is already a wonderful gift. However, if you wish to bless us with a gift or monetary, it will be deeply appreciated.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Is parking available at the venue?
-<span class="faq-toggle">+</span>
-</div>
-<div class="faq-answer">
-Yes, parking will be available at the venue for our guests. Kindly follow the directions of the parking attendants upon arrival.
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
+        <div class="container">
+            <h2 class="entourage-title">THE WEDDING</h2>
+            <div class="entourage-sub">Entourage</div>
+
+            <!-- OFFICIATING -->
+            <div class="entourage-group">
+                <h3>Officiating</h3>
+
+                <div class="entourage-list">
+                    <p><strong>Officiating Minister</strong><br>Rogelio Paraguas</p><br>
+                    <p><strong>Director of Peace</strong><br>Rogelio Rogel</p><br>
+                    <p><strong>Chairman</strong><br>Ramir Gomez</p>
+                </div>
+            </div>
+
+            <!-- PARENTS -->
+
+            <div class="entourage-group">
+                <h3>Parents</h3>
+
+                <div class="entourage-list">
+                    <div class="row text-center">
+                        <div class="col-md-6 mb-4">
+                            <p><strong>Groom's Parents</strong></p>
+                            <p><strong>Stand as Father</strong><br>Mark Lester Donato</p><br>
+                            <p><strong>Stand as Mother</strong><br>Angela Sophia Donato – Dela Peña</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p><strong>Bride's Parents</strong></p>
+                            <p><strong>Father</strong><br>Sotero Musnit</p><br>
+                            <p><strong>Mother</strong><br>Eleale Musnit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WITNESSES -->
+            <div class="entourage-group">
+                <h3>Witnesses</h3>
+
+                <div class="entourage-list">
+                    <p>Leonardo Santos & Delaiah Santos</p>
+                    <p>Arsenio Pedrenia & Merceditas Pedrenia</p>
+                </div>
+            </div>
+
+            <!-- BEST MAN -->
+            <div class="entourage-group">
+                <h3>Best Man</h3>
+
+                <div class="entourage-list">
+                    <p>King Arthur Donato</p>
+                </div>
+            </div>
+
+
+            <!-- GROOMSMEN -->
+            <div class="entourage-group">
+                <h3>Groomsmen</h3>
+
+                <div class="entourage-list">
+                    <p>Nicanor Bayeta Jr.</p>
+                    <p>Lester Jones Musnit</p>
+                    <p>Art Kevin Donato</p>
+                    <p>Art Nicolo Donato</p>
+                    <p>Donn Manuel Donato</p>
+                    <p>TJ Alberto</p>
+                </div>
+            </div>
+
+            <!-- MAID OF HONOR -->
+            <div class="entourage-group">
+                <h3>Maid of Honor</h3>
+
+                <div class="entourage-list">
+                    <p>Vanessa Palanca</p>
+                </div>
+            </div>
+
+
+            <!-- BRIDESMAIDS -->
+            <div class="entourage-group">
+                <h3>Bridesmaids</h3>
+
+                <div class="entourage-list">
+                    <p>Darlean Hortaleza</p>
+                    <p>Grace Dawn Demisana</p>
+                    <p>Maureen Demisana</p>
+                    <p>Janine Gomez</p>
+                    <p>Princess Diar Pedrenia</p>
+                    <p>Meybel Molino</p>
+                </div>
+            </div>
+
+            <!-- LITTLE ENTOURAGE -->
+            <div class="entourage-group">
+                <h3>Little Entourage</h3>
+
+                <div class="entourage-list">
+                    <p><strong>Ring Bearer</strong><br>Prinz Arkell Donato</p><br>
+                    <p><strong>Bible Bearer</strong><br>Bvnso Saballero</p><br>
+                    <p><strong>Flower Girls</strong></p>
+                    <p>Xavia Claire Morales</p>
+                    <p>Nyra Aniah Rayn Donato</p>
+                    <p>Arrianna Emerald Gutierrez</p>
+                </div>
+            </div>
+
+            <!-- PRINCIPAL SPONSORS -->
+            <div class="entourage-group">
+                <h3>Principal Sponsors</h3>
+
+                <div class="sponsor-grid">
+                    <div>Toti Alberto & Ms. Joy Cua Alberto</div>
+                    <div>Mr. Troy Alberto & Ms. Yasmeen King</div>
+                    <div>Dr. Dondi Concepcion, MD</div>
+                    <div>Dr. John Porquez, MD</div>
+                    <div>Dr. Jose Bondoc, MD</div>
+                    <div>Dr. Ricky Arrazamendez & Dra. Arrazamendez</div>
+                    <div>Mr. Ryan Ignacio & Atty. Kat Ignacio</div>
+                    <div>Mrs. Flora Maasin Ignacio & Agatha Ignacio</div>
+                    <div>Bro. Vanni Saguban & Sis. Malou Saguban</div>
+                    <div>Bro. Arman Menguito & Sis. Maricel Menguito</div>
+                    <div>Bro. Jun Saturnino & Sis. Marinela Saturnino</div>
+                    <div>Ms. Samantha Aquino</div>
+                    <div>Ms. Eden Sermona</div>
+                    <div>Ms. Teresita Aquino</div>
+                    <div>Mr. Jasper Cruz</div>
+                    <div>Mr. Virgilio Hermogino</div>
+                    <div>Mrs. Cora Miyazaki & Ms. April Tiglao</div>
+                    <div>Mr. Mervic Sabiniano & Shegivelee Palacio</div>
+                    <div>Mr. Ronald Cudiamat & Mrs. Apple Cudiamat</div>
+                    <div>Mr. Emmanuel Musnit & Mrs. Jocelyn Musnit</div>
+                    <div>Mr. Virgilio Musnit</div>
+                </div>
+            </div>
+
+            <!-- USHERS -->
+            <div class="entourage-group">
+                <h3>Ushers</h3>
+
+                <div class="entourage-list">
+                    <p>Lean Simon Luciano</p>
+                    <p>Jade Palarpalar</p>
+                    <p>Jesse Estor</p>
+                    <p>Ramil Husayan</p>
+                    <p>Prince Jairus Rogel</p>
+                    <p>Benjie Ison</p>
+                </div>
+            </div>
+
+
+            <!-- USHERETTES -->
+            <div class="entourage-group">
+                <h3>Usherettes</h3>
+
+                <div class="entourage-list">
+                    <p>Maria Christine Hipol</p>
+                    <p>Shienna Husayan</p>
+                    <p>Resham Vinzal</p>
+                    <p>Nerisa Hipol</p>
+                    <p>Gracel Tolosa</p>
+                    <p>Mary Rose Hay</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faqs" class="faq-section fade-in-section" data-nav="dark">
+        <div class="container">
+            <h2 class="faq-title">FREQUENTLY ASKED</h2>
+            <div class="faq-sub">Questions</div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are children invited?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        To allow all guests to relax and enjoy the celebration, the wedding may be adults-only unless children are specifically included on the entourage and invitation as well.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I bring a plus one?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Due to limited seating, only guests listed on the invitation are able to attend. Thank you for understanding.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can guests wear white?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Out of respect for the bride, we kindly ask guests not to wear white or off-white attire during the wedding day.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I take photos during the ceremony?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We kindly ask guests to refrain from taking photos during the ceremony and simply enjoy the moment. You are welcome to take photos during the reception.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can guests ask the couple to kiss during the reception?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        In keeping with the respectful tone of the celebration, we may share a kiss during appropriate moments in the program, but guests are kindly requested not to chant or cheer for it.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can guests ring bells or clink glasses to ask the couple to kiss?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        For our celebration, we kindly ask guests not to ring bells or clink glasses, as we wish to keep the program simple and respectful.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are gifts required?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Your presence at our wedding is already a wonderful gift. However, if you wish to bless us with a gift or monetary, it will be deeply appreciated.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is parking available at the venue?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, parking will be available at the venue for our guests. Kindly follow the directions of the parking attendants upon arrival.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="rsvp" class="rsvp-section fade-in-section" data-nav="dark">
         <div class="container">
-
             <div class="row align-items-center">
 
                 <!-- LEFT RSVP ART -->
@@ -1986,109 +1905,77 @@ Yes, parking will be available at the venue for our guests. Kindly follow the di
             setInterval(updateCountdown, 1000);
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
+        $(document).ready(function () {
+            // Intersection Observer (fade-in)
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
+                        $(entry.target).addClass('is-visible');
                         observer.unobserve(entry.target);
                     }
                 });
-            }, {
-                threshold: 0.2
+            }, { threshold: 0.2 });
+
+            $('.fade-in-section').each(function () {
+                observer.observe(this);
             });
 
-            document.querySelectorAll('.fade-in-section').forEach(section => {
-                observer.observe(section);
+            // Other guests input toggle
+            const $otherOption = $("#otherOption");
+            const $otherGuests = $("#otherGuests");
+
+            $('input[id="otherOption"]').on("change", function () {
+                if ($otherOption.is(":checked")) {
+                    $otherGuests.prop("disabled", false).val("").focus();
+                } else {
+                    $otherGuests.prop("disabled", true).val("");
+                }
             });
-        });
 
-        const otherOption = document.getElementById("otherOption");
-        const otherGuests = document.getElementById("otherGuests");
-        const guestRadios = document.querySelectorAll('input[id="otherOption"]');
+            // RSVP form submit
+            $("#rsvpForm").on("submit", function (e) {
+                e.preventDefault();
+                setTimeout(function () {
+                    $("#rsvpSuccess").addClass("show");
+                    $("body").addClass("no-scroll");
+                    $("#rsvpForm")[0].reset();
+                }, 800);
+            });
 
-        guestRadios.forEach(radio => {
-            radio.addEventListener("change", function(){
-                if(otherOption.checked){
-                    otherGuests.disabled = false;
-                    otherGuests.value = "";
-                    otherGuests.focus();
-                }else{
-                    otherGuests.disabled = true;
-                    otherGuests.value = "";
+            window.closeRSVPPopup = function () {
+                location.reload();
+            };
+
+            // FAQ toggle
+            $(".faq-question").on("click", function () {
+                $(this).parent().toggleClass("active");
+            });
+
+            // Navbar dark/light toggle on scroll
+            const $navbar = $(".navbar");
+            const $sections = $("section");
+
+            $(window).on("scroll", function () {
+                let currentSection = null;
+
+                $sections.each(function () {
+                    const sectionTop = $(this).offset().top - 200;
+                    const sectionBottom = sectionTop + $(this).outerHeight();
+
+                    if ($(window).scrollTop() >= sectionTop && $(window).scrollTop() < sectionBottom) {
+                        currentSection = $(this);
+                    }
+                });
+
+                if (currentSection && currentSection.data("nav") === "dark") {
+                    $navbar.removeClass("navbar-light-text").addClass("navbar-dark-text");
+                    $(".nav-line").css("background", "#333"); // change line to dark
+                } else {
+                    $navbar.removeClass("navbar-dark-text").addClass("navbar-light-text");
+                    $(".nav-line").css("background", "#fff"); // change line to white
                 }
             });
         });
-
-        document.getElementById("rsvpForm").addEventListener("submit", function(){
-            setTimeout(function(){
-                document.getElementById("rsvpSuccess").classList.add("show");
-                document.body.classList.add("no-scroll");
-                document.getElementById("rsvpForm").reset();
-            },800);
-        });
-
-        function closeRSVPPopup(){
-            location.reload();
-        }
-
-        document.querySelectorAll(".faq-question").forEach(question=>{
-question.addEventListener("click",()=>{
-
-const item = question.parentElement
-item.classList.toggle("active")
-
-})
-})
-
-const sections = document.querySelectorAll("section")
-const navbar = document.querySelector(".navbar")
-
-window.addEventListener("scroll",()=>{
-
-let current = ""
-
-sections.forEach(section=>{
-const sectionTop = section.offsetTop - 100
-const sectionHeight = section.offsetHeight
-
-if(pageYOffset >= sectionTop){
-current = section.getAttribute("data-nav")
-}
-})
-
-if(current === "dark"){
-navbar.classList.remove("navbar-light-text")
-navbar.classList.add("navbar-dark-text")
-}else{
-navbar.classList.remove("navbar-dark-text")
-navbar.classList.add("navbar-light-text")
-}
-
-})
-
-window.addEventListener("scroll",()=>{
-
-let currentSection = null
-
-sections.forEach(section=>{
-const sectionTop = section.offsetTop - 200
-const sectionBottom = sectionTop + section.offsetHeight
-
-if(window.scrollY >= sectionTop && window.scrollY < sectionBottom){
-currentSection = section
-}
-})
-
-if(currentSection && currentSection.dataset.nav === "dark"){
-navbar.classList.remove("navbar-light-text")
-navbar.classList.add("navbar-dark-text")
-}else{
-navbar.classList.remove("navbar-dark-text")
-navbar.classList.add("navbar-light-text")
-}
-
-})
     </script>
 @endpush
 
