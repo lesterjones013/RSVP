@@ -6,6 +6,32 @@
             --line-width: 520px;
         }
 
+        .navbar{
+background: rgba(255,255,255,0.95);
+backdrop-filter: blur(6px);
+box-shadow: 10px 2px 10px rgba(0,0,0,0.05);
+}
+
+        /* navbar text for dark backgrounds */
+
+.navbar-light-text .nav-link{
+color:#ffffff !important;
+}
+
+.navbar-light-text .navbar-brand{
+color:#ffffff !important;
+}
+
+/* navbar text for light backgrounds */
+
+.navbar-dark-text .nav-link{
+color:#333 !important;
+}
+
+.navbar-dark-text .navbar-brand{
+color:#333 !important;
+}
+
         .wedding-nav {
             position: fixed;
             top: 40px;
@@ -15,7 +41,7 @@
         .nav-items .nav-link {
             letter-spacing: 4px;
             font-size: 20px;
-            color: white !important;
+            /* color: white !important; */
 
             opacity: 0;
             transform: translateY(20px);
@@ -27,6 +53,9 @@
         .nav-items .nav-link:nth-child(3) { animation-delay: 0.6s; }
         .nav-items .nav-link:nth-child(4) { animation-delay: 0.8s; }
         .nav-items .nav-link:nth-child(5) { animation-delay: 1s; }
+        .nav-items .nav-link:nth-child(6) { animation-delay: 1.2s; }
+        .nav-items .nav-link:nth-child(7) { animation-delay: 1.4s; }
+        .nav-items .nav-link:nth-child(8) { animation-delay: 1.6s; }
 
         .nav-line {
             width: 0;
@@ -36,6 +65,10 @@
 
             animation: lineGrow 0.7s ease forwards;
             animation-delay: 1.4s;
+        }
+
+        .navbar[data-nav="dark"] .nav-line {
+            background: #333;
         }
 
         @keyframes navReveal {
@@ -98,14 +131,17 @@
 @endpush
 
 @section('content')
-    <nav class="navbar fixed-top bg-transparent wedding-nav">
+    <nav class="navbar fixed-top bg-transparent wedding-nav navbar-light-text">
         <div class="container justify-content-center flex-column align-items-center">
             <div class="d-flex gap-4 nav-items">
+                <a class="nav-link libertinus-math-regular" href="/">HOME</a>
+                <a class="nav-link libertinus-math-regular" href="#save-the-date">SAVE THE DATE</a>
                 <a class="nav-link libertinus-math-regular" href="#story">STORY</a>
-                <a class="nav-link libertinus-math-regular" href="#rsvp">RSVP</a>
                 <a class="nav-link libertinus-math-regular" href="#timeline">TIMELINE</a>
-                <a class="nav-link libertinus-math-regular" href="#details">DETAILS</a>
-                <a class="nav-link libertinus-math-regular" href="#faq">FAQ</a>
+                <a class="nav-link libertinus-math-regular" href="#venue">VENUE</a>
+                <a class="nav-link libertinus-math-regular" href="#entourage">ENTOURAGE</a>
+                <a class="nav-link libertinus-math-regular" href="#faqs">FAQs</a>
+                <a class="nav-link libertinus-math-regular" href="#rsvp">RSVP</a>
             </div>
 
             <span class="nav-line"></span>

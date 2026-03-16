@@ -1019,6 +1019,178 @@
         border-radius:6px;
         cursor:pointer;
     }
+
+    /* ===============================
+ENTOURAGE SECTION
+================================ */
+
+.entourage-section{
+background:#f6f5f2;
+padding:120px 20px;
+}
+
+.entourage-title{
+text-align:center;
+font-family:"Playfair Display", serif;
+font-size:54px;
+letter-spacing:4px;
+}
+
+.entourage-sub{
+text-align:center;
+font-family:"Mea Culpa", cursive;
+font-size:36px;
+margin-top:-10px;
+margin-bottom:70px;
+}
+
+.entourage-group{
+margin-bottom:60px;
+}
+
+.entourage-group h3{
+font-family:"Mea Culpa", cursive;
+font-size:46px;
+text-align:center;
+margin-bottom:25px;
+}
+
+.entourage-list{
+text-align:center;
+font-family:"Playfair Display", serif;
+}
+
+.entourage-list p{
+margin:4px 0;
+font-size:16px;
+color:#444;
+}
+
+/* sponsors grid */
+
+.sponsor-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:8px;
+text-align:center;
+font-family:"Playfair Display", serif;
+font-size:15px;
+color:#444;
+}
+
+/* tablet */
+
+@media (max-width:1024px){
+
+.entourage-title{
+font-size:44px;
+}
+
+.entourage-group h3{
+font-size:40px;
+}
+
+}
+
+/* mobile */
+
+@media (max-width:767px){
+
+.entourage-section{
+padding:80px 20px;
+}
+
+.entourage-title{
+font-size:36px;
+}
+
+.entourage-sub{
+font-size:28px;
+}
+
+.entourage-group h3{
+font-size:32px;
+}
+
+.sponsor-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ===============================
+FAQ SECTION
+================================ */
+
+.faq-section{
+background:#ffffff;
+padding:120px 20px;
+}
+
+.faq-title{
+text-align:center;
+font-family:"Playfair Display", serif;
+font-size:54px;
+letter-spacing:4px;
+}
+
+.faq-sub{
+text-align:center;
+font-family:"Mea Culpa", cursive;
+font-size:36px;
+margin-top:-10px;
+margin-bottom:70px;
+}
+
+.faq-container{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+border-bottom:1px solid #e6e6e6;
+padding:18px 0;
+}
+
+.faq-question{
+font-family:"Playfair Display", serif;
+font-size:18px;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.faq-answer{
+display:none;
+margin-top:12px;
+color:#555;
+font-size:15px;
+line-height:1.6;
+font-family:"Libertinus Math", serif;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+.faq-toggle{
+font-size:20px;
+}
+
+/* mobile */
+
+@media(max-width:767px){
+
+.faq-title{
+font-size:36px;
+}
+
+.faq-sub{
+font-size:28px;
+}
+
+}
 </style>
 
 @section('page-content')
@@ -1034,7 +1206,7 @@
         </div>
     </section>
 
-    <section class="countdown-section fade-in-section">
+    <section id="save-the-date" class="countdown-section fade-in-section" data-nav="dark">
         <div class="countdown-inner">
             <h2>UNTIL THE BIG DAY!</h2>
 
@@ -1068,7 +1240,7 @@
         </div>
     </section>
 
-    <section class="date-rsvp-section fade-in-section">
+    <section class="date-rsvp-section fade-in-section" data-nav="dark">
         <div class="container">
 
             <!-- CENTERED DATE BLOCK -->
@@ -1128,7 +1300,7 @@
         </div>
     </section>
 
-    <section class="love-story-section fade-in-section">
+    <section id="story" class="love-story-section fade-in-section" data-nav="dark">
         <div class="container">
             <div class="row align-items-center">
 
@@ -1161,7 +1333,7 @@
             </div>
         </div>
     </section>
-    <section class="wedding-details-section fade-in-section">
+    <section id="timeline" class="wedding-details-section fade-in-section" data-nav="dark">
         <div class="container">
 
             <h2 class="timeline-title">WEDDING DAY</h2>
@@ -1206,7 +1378,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center" data-nav="dark">
                 <!-- LEFT -->
                 <div class="col-lg-6 details-left">
                     <h3 class="dress-title">Dress to impress</h3>
@@ -1279,7 +1451,7 @@
             </div>
         </div>
     </section>
-    <section class="location-section fade-in-section">
+    <section id="venue" class="location-section fade-in-section">
         <div class="container">
             <div class="row align-items-center location-row">
 
@@ -1315,7 +1487,338 @@
             </div>
         </div>
     </section>
-    <section id="rsvp" class="rsvp-section fade-in-section">
+    <section id="entourage" class="entourage-section fade-in-section" data-nav="dark">
+
+<div class="container">
+
+<h2 class="entourage-title">THE WEDDING</h2>
+<div class="entourage-sub">Entourage</div>
+
+<!-- OFFICIATING -->
+
+<div class="entourage-group">
+<h3>Officiating</h3>
+
+<div class="entourage-list">
+
+<p><strong>Officiating Minister</strong><br>Rogelio Paraguas</p>
+
+<p><strong>Director of Peace</strong><br>Rogelio Rogel</p>
+
+<p><strong>Chairman</strong><br>Ramir Gomez</p>
+
+</div>
+</div>
+
+
+<!-- PARENTS -->
+
+<div class="entourage-group">
+
+<h3>Parents</h3>
+
+<div class="row text-center">
+
+<div class="col-md-6 mb-4">
+
+<p><strong>Groom's Parents</strong></p>
+<p>Stand as Father<br>Mark Lester Donato</p>
+<p>Stand as Mother<br>Angela Sophia Donato – Dela Peña</p>
+
+</div>
+
+<div class="col-md-6">
+
+<p><strong>Bride's Parents</strong></p>
+<p>Father<br>Sotero Musnit</p>
+<p>Mother<br>Eleale Musnit</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WITNESSES -->
+
+<div class="entourage-group">
+
+<h3>Witnesses</h3>
+
+<div class="entourage-list">
+
+<p>Leonardo Santos & Delaiah Santos</p>
+<p>Arsenio Pedrenia & Merceditas Pedrenia</p>
+
+</div>
+
+</div>
+
+
+<!-- BEST MAN -->
+
+<div class="entourage-group">
+
+<h3>Best Man</h3>
+
+<div class="entourage-list">
+<p>King Arthur Donato</p>
+</div>
+
+</div>
+
+
+<!-- GROOMSMEN -->
+
+<div class="entourage-group">
+
+<h3>Groomsmen</h3>
+
+<div class="entourage-list">
+
+<p>Nicanor Bayeta Jr.</p>
+<p>Lester Jones Musnit</p>
+<p>Art Kevin Donato</p>
+<p>Art Nicolo Donato</p>
+<p>Donn Manuel Donato</p>
+<p>TJ Alberto</p>
+
+</div>
+
+</div>
+
+
+<!-- MAID OF HONOR -->
+
+<div class="entourage-group">
+
+<h3>Maid of Honor</h3>
+
+<div class="entourage-list">
+<p>Vanessa Palanca</p>
+</div>
+
+</div>
+
+
+<!-- BRIDESMAIDS -->
+
+<div class="entourage-group">
+
+<h3>Bridesmaids</h3>
+
+<div class="entourage-list">
+
+<p>Darlean Hortaleza</p>
+<p>Grace Dawn Demisana</p>
+<p>Maureen Demisana</p>
+<p>Janine Gomez</p>
+<p>Princess Diar Pedrenia</p>
+<p>Meybel Molino</p>
+
+</div>
+
+</div>
+
+
+<!-- LITTLE ENTOURAGE -->
+
+<div class="entourage-group">
+
+<h3>Little Entourage</h3>
+
+<div class="entourage-list">
+
+<p><strong>Ring Bearer</strong><br>Prinz Arkell Donato</p>
+
+<p><strong>Bible Bearer</strong><br>Bvnso Saballero</p>
+
+<p><strong>Flower Girls</strong></p>
+
+<p>Xavia Claire Morales</p>
+<p>Nyra Aniah Rayn Donato</p>
+<p>Arrianna Emerald Gutierrez</p>
+
+</div>
+
+</div>
+
+
+<!-- PRINCIPAL SPONSORS -->
+
+<div class="entourage-group">
+
+<h3>Principal Sponsors</h3>
+
+<div class="sponsor-grid">
+
+<div>Bro. Arman Menguito & Sis. Maricel Menguito</div>
+<div>Bro. Dominador Sampaga & Sis. Pia Sampaga</div>
+<div>Bro. Vanni Saguban & Sis. Malou Saguban</div>
+<div>Bro. Jun Saturnino & Sis. Marinela Saturnino</div>
+<div>Bro. Deverio Salalima & Sis. Norselyn Salalima</div>
+
+<div>Toti Alberto & Joy Alberto</div>
+<div>Donn Cruz & April Cruz</div>
+<div>Dr. Dondi Concepcion</div>
+<div>Dr. John Porquez, MD</div>
+<div>Dr. Jose Bondoc, MD</div>
+<div>Dr. Ricky Arrazamendez & Dra. Arrazamendez</div>
+
+<div>Engr. Arnold Rillorta</div>
+<div>Ms. Samantha Aquino</div>
+<div>Ms. Eden Sermona</div>
+<div>Ms. Teresita Aquino</div>
+<div>Mr. Troy Alberto & Ms. Yasmeen King</div>
+<div>Mr. Jose Francisco Miranda</div>
+<div>Mr. Jasper Cruz</div>
+<div>Mr. Virgilio Hermogino</div>
+<div>Mr. Mervic Sabiniano & Shegivelee Palacio</div>
+<div>Mr. Ronald Cudiamat & Mrs. Apple Cudiamat</div>
+
+</div>
+
+</div>
+
+
+<!-- USHERS -->
+
+<div class="entourage-group">
+
+<h3>Ushers</h3>
+
+<div class="entourage-list">
+
+<p>Lean Simon Luciano</p>
+<p>Jade Palarpalar</p>
+<p>Jesse Estor</p>
+<p>Ramil Husayan</p>
+<p>Prince Jairus Rogel</p>
+<p>Benjie Ison</p>
+
+</div>
+
+</div>
+
+
+<!-- USHERETTES -->
+
+<div class="entourage-group">
+
+<h3>Usherettes</h3>
+
+<div class="entourage-list">
+
+<p>Maria Christine Hipol</p>
+<p>Shienna Husayan</p>
+<p>Resham Vinzal</p>
+<p>Nerisa Hipol</p>
+<p>Gracel Tolosa</p>
+<p>Mary Rose Hay</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="faqs" class="faq-section fade-in-section" data-nav="dark">
+
+<div class="container">
+
+<h2 class="faq-title">FREQUENTLY ASKED</h2>
+<div class="faq-sub">Questions</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="faq-question">
+Are children invited?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+To allow all guests to relax and enjoy the celebration, the wedding may be adults-only unless children are specifically included on the entourage and invitation as well.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can I bring a plus one?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Due to limited seating, only guests listed on the invitation are able to attend. Thank you for understanding.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can guests wear white?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Out of respect for the bride, we kindly ask guests not to wear white or off-white attire during the wedding day.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can I take photos during the ceremony?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+We kindly ask guests to refrain from taking photos during the ceremony and simply enjoy the moment. You are welcome to take photos during the reception.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can guests ask the couple to kiss during the reception?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+In keeping with the respectful tone of the celebration, we may share a kiss during appropriate moments in the program, but guests are kindly requested not to chant or cheer for it.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can guests ring bells or clink glasses to ask the couple to kiss?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+For our celebration, we kindly ask guests not to ring bells or clink glasses, as we wish to keep the program simple and respectful.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Are gifts required?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Your presence at our wedding is already a wonderful gift. However, if you wish to bless us with a gift or monetary, it will be deeply appreciated.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Is parking available at the venue?
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Yes, parking will be available at the venue for our guests. Kindly follow the directions of the parking attendants upon arrival.
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+    <section id="rsvp" class="rsvp-section fade-in-section" data-nav="dark">
         <div class="container">
 
             <div class="row align-items-center">
@@ -1528,6 +2031,64 @@
         function closeRSVPPopup(){
             location.reload();
         }
+
+        document.querySelectorAll(".faq-question").forEach(question=>{
+question.addEventListener("click",()=>{
+
+const item = question.parentElement
+item.classList.toggle("active")
+
+})
+})
+
+const sections = document.querySelectorAll("section")
+const navbar = document.querySelector(".navbar")
+
+window.addEventListener("scroll",()=>{
+
+let current = ""
+
+sections.forEach(section=>{
+const sectionTop = section.offsetTop - 100
+const sectionHeight = section.offsetHeight
+
+if(pageYOffset >= sectionTop){
+current = section.getAttribute("data-nav")
+}
+})
+
+if(current === "dark"){
+navbar.classList.remove("navbar-light-text")
+navbar.classList.add("navbar-dark-text")
+}else{
+navbar.classList.remove("navbar-dark-text")
+navbar.classList.add("navbar-light-text")
+}
+
+})
+
+window.addEventListener("scroll",()=>{
+
+let currentSection = null
+
+sections.forEach(section=>{
+const sectionTop = section.offsetTop - 200
+const sectionBottom = sectionTop + section.offsetHeight
+
+if(window.scrollY >= sectionTop && window.scrollY < sectionBottom){
+currentSection = section
+}
+})
+
+if(currentSection && currentSection.dataset.nav === "dark"){
+navbar.classList.remove("navbar-light-text")
+navbar.classList.add("navbar-dark-text")
+}else{
+navbar.classList.remove("navbar-dark-text")
+navbar.classList.add("navbar-light-text")
+}
+
+})
     </script>
 @endpush
 
